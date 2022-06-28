@@ -85,6 +85,7 @@ func main() {
 		if err != nil {
 			die("Can't connect to %s: %s\n", addr, err)
 		}
+		verbose("Connected to %s\n", addr)
 
 		o := io_obj{conn.RemoteAddr().String()}
 
